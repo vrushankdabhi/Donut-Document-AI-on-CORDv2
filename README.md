@@ -87,16 +87,6 @@ The `Donut_AI_Python_Script.ipynb` notebook contains the code to:
 ### Output
 - Structured data in Excel format: `output/sample_receipt.xlsx`
 
-## Repository Structure
-
-```bash
-├── Donut_AI_Python_Script.ipynb  # Jupyter notebook for training and inference
-├── examples/
-│   ├── input_docs/               # Directory containing example input documents
-│   └── output/                   # Directory containing example output files
-├── README.md                     # This readme file
-└── requirements.txt              # Required dependencies
-```
 
 ## Conclusion
 
