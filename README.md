@@ -11,10 +11,22 @@ This repository contains the implementation of a Document AI system using the **
 ## Model
 
 ### Donut (Document Understanding Transformer)
-- **Architecture:** End-to-end transformer model designed for document understanding.
-- **Capabilities:** Integrates OCR and information extraction into a single process, making it highly efficient for tasks involving complex document layouts like receipts and invoices.
-- **Fine-Tuning:** The model was fine-tuned on the CORD v2 dataset to extract key information from receipt documents, including merchant names, dates, item descriptions, prices, and totals.
+Donut, is an end-to-end transformer model designed specifically for processing and extracting structured information from document images. Unlike traditional OCR-based pipelines that require separate stages for text recognition and information extraction, Donut integrates these tasks into a single, unified model, streamlining the workflow and enhancing efficiency.
 
+
+Justification for Selection:
+End-to-End Architecture:
+Efficiency: Donut's architecture eliminates the need for separate OCR and information extraction steps by processing document images directly to extract structured information. This end-to-end approach reduces the complexity of the pipeline and minimises potential error propagation between stages.
+Suitability for Complex Layouts: The model is particularly effective for documents with complex layouts, such as invoices and receipts, where fields like dates, amounts, and item descriptions need to be accurately identified and extracted.
+Ease of Fine-Tuning:
+Pre-trained on Diverse Document Types: Donut is pre-trained on a variety of document types, making it adaptable to specific tasks with minimal additional training. Fine-tuning Donut on a dataset like "Invoices and Receipts OCR v1" involves adjusting the model to recognize specific fields relevant to financial documents, a process that is well-supported by Donut’s architecture.
+Minimal Data Requirement: Fine-tuning Donut requires less annotated data compared to models that need extensive separate datasets for OCR and information extraction. This makes it practical and cost-effective to adapt Donut to specific use cases.
+Support for Various Formats:
+Versatility: Donut is capable of handling a wide range of document formats, including invoices, receipts, forms, and other structured documents. This versatility ensures that the model can be effectively applied across different types of banking documents, enhancing its utility in real-world applications.
+Robust to Noise and Variations: The model is designed to be robust to variations in document quality, such as differences in lighting, resolution, and noise, which are common challenges in processing scanned documents.
+Model Architecture:
+Transformer-Based: Donut leverages a transformer architecture, which is known for its ability to capture global context and relationships within the data. This architecture is particularly advantageous for understanding the layout and structure of documents, ensuring that the model can accurately identify and extract relevant information.
+Pre-trained on Synthetic and Real-World Data: The model has been trained on a combination of synthetic and real-world document data, allowing it to generalise well to unseen document types and layouts, further enhancing its adaptability and performance.
 ### Hugging Face Model Link
 The fine-tuned model is available on Hugging Face: [Donut Document AI](https://huggingface.co/vrushankkk/donutDocAI).
 
