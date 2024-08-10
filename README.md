@@ -78,9 +78,3 @@ The `Donut_AI_Python_Script.ipynb` notebook contains the code to:
 ## Conclusion
 
 This project demonstrates the application of the Donut model for document understanding tasks, specifically in the banking and finance sector for processing receipts. The combination of the Donut model and the CORD v2 dataset provides a robust solution for automating the extraction of structured information from complex document layouts.
-
-Feel free to explore, use, and contribute to this repository!
-
----
-
-This README template covers all the essential aspects of your project and guides users through the process of using your code, understanding the model, and exploring the dataset. Make sure to adjust the content to fit any additional specifics of your project.
