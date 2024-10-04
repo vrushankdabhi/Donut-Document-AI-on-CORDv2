@@ -57,36 +57,6 @@ The `Donut_AI_Python_Script.ipynb` notebook contains the code to:
 3. **Infer and Extract Information:** Use the fine-tuned model to extract structured information from new receipts.
 4. **Export Results:** Convert the extracted information into an Excel sheet.
 
-### Usage Instructions
-
-1. **Environment Setup:**
-   - Clone the repository:
-     ```bash
-     git clone https://github.com/vrushankdabhi/Donut-Document-AI-on-CORDv2.git
-     cd Donut-Document-AI-on-CORDv2
-     ```
-   - Install the required dependencies:
-     ```bash
-     pip install -r requirements.txt
-     ```
-
-2. **Run the Notebook:**
-   - Open `Donut_AI_Python_Script.ipynb` in Jupyter Notebook or any compatible environment.
-   - Follow the steps in the notebook to load the model, preprocess the data, and infer the results.
-
-3. **Input and Output:**
-   - Place the PDF receipts you want to process in the `input_docs/` directory.
-   - Run the notebook to process the documents.
-   - The extracted data will be saved as an Excel sheet in the `output/` directory.
-
-## Examples
-
-### Input
-- Sample PDF receipt document: `input_docs/sample_receipt.pdf`
-
-### Output
-- Structured data in Excel format: `output/sample_receipt.xlsx`
-
 
 ## Conclusion
 
